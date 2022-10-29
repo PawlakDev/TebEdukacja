@@ -1,4 +1,4 @@
-public class UJK extends Uczelnia{
+public class UJK extends Uczelnia {
     private String dziekan;
 
     public UJK(long id, String nazwa, String miejscowość, String opis, String dziekan) {
@@ -7,10 +7,11 @@ public class UJK extends Uczelnia{
     }
 
     public String getDziekan() {
-        return dziekan;
+        return this.dziekan;
     }
 
-    public String getInfo(){
-        return super.getInfo()+ " Dziekan: %s".formatted(dziekan);
+    public String getInfo() {
+        String var10000 = super.getInfo();
+        return var10000 + " Dziekan: %s".formatted(this.dziekan);
     }
 }

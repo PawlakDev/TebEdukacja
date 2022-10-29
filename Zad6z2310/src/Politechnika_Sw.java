@@ -10,9 +10,6 @@ public class Politechnika_Sw extends Uczelnia{
     }
 
     public String getInfo(){
-        System.out.println("cos");
         return super.getInfo()+ " Kierunek: %s".formatted(kierunek);
     }
-
-    //cos nowego
 }

@@ -12,22 +12,22 @@ public class Uczelnia {
     }
 
     public long getId() {
-        return id;
+        return this.id;
     }
 
     public String getNazwa() {
-        return nazwa;
+        return this.nazwa;
     }
 
     public String getMiejscowość() {
-        return miejscowość;
+        return this.miejscowość;
     }
 
     public String getOpis() {
-        return opis;
+        return this.opis;
     }
 
-    public String getInfo(){
-        return "Id: %d, Nazwa: %s, Miejscowosc: %s, Opis: %s".formatted(id, nazwa, miejscowość, opis);
+    public String getInfo() {
+        return "Id: %d, Nazwa: %s, Miejscowosc: %s, Opis: %s".formatted(this.id, this.nazwa, this.miejscowość, this.opis);
     }
 }
