@@ -5,9 +5,21 @@ public class Nauczyciel {
     private String miejscowosc;
     private long pesel;
 
+    public Nauczyciel(long id, String imie, String nazwisko, String miejscowosc, long pesel) {
+        this.id = id;
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.miejscowosc = miejscowosc;
+        this.pesel = pesel;
+    }
+
     public Nauczyciel(long id, String miejscowosc) {
         this.id = id;
         this.miejscowosc = miejscowosc;
+    }
+
+    public Nauczyciel(long id) {
+        this.id = id;
     }
 
     public long getId() {
@@ -30,26 +42,6 @@ public class Nauczyciel {
         return this.pesel;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public void setImie(String imie) {
-        this.imie = imie;
-    }
-
-    public void setNazwisko(String nazwisko) {
-        this.nazwisko = nazwisko;
-    }
-
-    public void setMiejscowosc(String miejscowosc) {
-        this.miejscowosc = miejscowosc;
-    }
-
-    public void setPesel(long pesel) {
-        this.pesel = pesel;
-    }
-
     public String toString() {
         return "Id: %d, Imie: %s, Nazwisko: %s, Pesel: %d".formatted(id,imie,nazwisko,pesel);
     }
@@ -58,6 +50,6 @@ public class Nauczyciel {
         return "Id: %d".formatted(id);
     }
     public String toStringMiejscowosc(){
-        return "Miejscowosc: %d".formatted(miejscowosc);
+        return ", Miejscowosc: %s".formatted(miejscowosc);
     }
 }
