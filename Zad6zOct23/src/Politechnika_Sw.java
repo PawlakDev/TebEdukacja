@@ -10,6 +10,6 @@ public class Politechnika_Sw extends Uczelnia{
     }
 
     public String getInfo(){
-        return super.getInfo()+ " Kierunek: %s".formatted(kierunek);
+        return super.getInfo()+ ", Kierunek: %s".formatted(kierunek);
     }
 }
